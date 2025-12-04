@@ -1,9 +1,9 @@
 Diabetes Prediction App (Logistic Regression)
 This project predicts the likelihood of diabetes based on medical parameters using Logistic Regression.
 
-App URL:https://aexsttdodpklttbgnmydecy.streamlit.app
+App URL: https://aexsttdodpklttbgnmydecy.streamlit.app
 
-Features Used
+Features Used:-
 1.Pregnancies
 2.Glucose
 3.Blood Pressure
