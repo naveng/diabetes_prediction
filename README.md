@@ -19,7 +19,7 @@ Scaling: StandardScaler
 Target Variable: Outcome (0 = No Diabetes, 1 = Diabetes)  
 Dataset: PIMA Diabetes Dataset  
 
-Project Structure:-
+Project Structure:-  
 app.py              # Streamlit frontend code  
 logistic_model.pkl  # Saved ML model  
 scaler.pkl          # Saved StandardScaler  
