@@ -1,4 +1,14 @@
+import streamlit as st
+import numpy as np
+import joblib
 
+# Load model and scaler
+model = joblib.load("logistic_model.pkl")
+scaler = joblib.load("scaler.pkl")
+
+st.title("Diabetes Prediction App")
+
+st.write("Enter patient details to predict diabetes outcome.")
 # Input fields for your features
 Pregnancies = st.number_input("Pregnancies", min_value=0, max_value=20, value=1)
 Glucose = st.number_input("Glucose Level", min_value=0, max_value=300, value=120)
@@ -24,3 +34,4 @@ if st.button("Predict"):
         st.error(f"Diabetes Detected with Probability: {probability:.2f}")
     else:
         st.success(f"No Diabetes Detected. Probability: {probability:.2f}")
+
